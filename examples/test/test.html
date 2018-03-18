@@ -14,19 +14,16 @@
     var jsonobj = window.processData.parseJSON(jsonstr);
     console.log("JSON字符串转JSON对象: " + jsonstr + " --转为--> " + jsonobj);
 
-
     var jsonstr = '{"items":{"-name":"456","item":[{"-name":"123","#text":"123"},{"-name":"456","#text":"678"}]}}';
     var jsonobj = window.processData.parseJSON(jsonstr);
     //JSON对象转JSON字符串
     var jsonstr1 = window.processData.json2str(jsonobj);
     console.log("JSON对象转JSON字符串: " + jsonobj + " --转为--> " + jsonstr1);
 
-
     var xmlstr = "<items name='456'><item name='123'>123</item><item name='456'>678</item></items>";
     //XML字符串转XML对象
     var xmlobj = window.processData.parseXML(xmlstr);
     console.log("XML字符串转XML对象: " + xmlstr + " --转为--> " + xmlobj);
-
 
     var xmlstr = "<items name='456'><item name='123'>123</item><item name='456'>678</item></items>";
     var xmlobj = window.processData.parseXML(xmlstr);
